@@ -32,7 +32,7 @@ function Blog() {
       <div className="landing-page min-h-screen">
         <div className="grid gap-6 lg:relative justify-center items-center md:items-start pt-24 md:pt-40 mx-2 lg:mx-56 pb-4 md:pb-0 border-opacity-20 border-b border-white">
           <p className="text-white leading-9 text-xl md:text-4xl font-poppins font-semibold tracking-wide md:w-3/4">
-            Updates, stories, and announcements from the Nextswap Labs team.
+          Insights and Updates on AI-Powered Brain Tumor Prediction.
           </p>
           <Image
             src={blog}
@@ -42,8 +42,7 @@ function Blog() {
             alt="blog"
           />
           <p className="text-white xl:absolute xl:bottom-4 font-medium md:font-semibold tracking-wide font-poppins test-base md:text-2xl z-30">
-            Talos Teams up with Nextswap Labs and Fireblocks in Landmark
-            Partnership to Bring DeFi Liquidity to Institutional Investors
+          Leading AI Healthcare Provider Partners with Top Research Institutions to Advance Brain Tumor Prediction. Leverages Advanced Technology and Collaboration to Revolutionize Brain Tumor Prediction
           </p>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-2 pt-4 mx-2 lg:mx-56">

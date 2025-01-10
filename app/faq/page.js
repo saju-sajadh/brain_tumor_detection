@@ -13,62 +13,42 @@ function FAQ() {
         </div>
         <div className="w-full flex flex-col gap-5 border-white border-b border-opacity-20 py-16">
           <p className="text-white text-lg md:text-xl font-semibold tracking-wider font-poppins">
-            What is Nextswap Protocol?
+            What is this brain tumor grade prediction platform?
           </p>
           <p className="text-white text-base md:text-lg font-medium text-opacity-60 tracking-wider font-poppins">
-            The Nextswap Protocol is an open-source protocol for providing
-            liquidity and trading ERC20 tokens on Ethereum. It eliminates
-            trusted intermediaries and unnecessary forms of rent extraction,
-            allowing for safe, accessible, and efficient exchange activity. The
-            protocol is non-upgradable and designed to be censorship resistant.
-          </p>
-          <p className="text-white text-base md:text-lg font-medium text-opacity-60 tracking-wider font-poppins">
-            The Nextswap Protocol and the Nextswap Interface were developed by
-            Nextswap Labs.
-          </p>
-          <p className="text-white text-base md:text-lg font-medium text-opacity-60 tracking-wider font-poppins">
-            Check out the Introduction section of our docs for more info on the
-            different roles played by Labs, the Interface, and the Protocol.
+            This platform is an AI-powered tool designed to assist medical professionals in predicting the grade of brain tumors. It utilizes advanced machine learning algorithms and medical image analysis to provide accurate and timely predictions, aiding in diagnosis and treatment planning.
           </p>
         </div>
         <div className="w-full flex flex-col gap-5 border-white border-b border-opacity-20 py-16">
           <p className="text-white text-lg md:text-xl font-semibold tracking-wider font-poppins">
-            How does Nextswap Protocol work?
+            How does the prediction work?
           </p>
           <p className="text-white text-base md:text-lg font-medium text-opacity-60 tracking-wider font-poppins">
-            Nextswap is an automated market maker. In practical terms, it is a
-            collection of smart contracts that define a standard way to create
-            liquidity pools, provide liquidity, and swap assets.
+            The platform analyzes medical images, such as MRI or CT scans, using deep learning models. These models are trained on a vast dataset of brain tumor images with known grades. By identifying patterns and features in the provided image, the platform can predict the grade of the tumor with high accuracy.
+          </p>
+        </div>
+        <div className="w-full flex flex-col gap-5 border-white border-b border-opacity-20 py-16">
+          <p className="text-white text-lg md:text-xl font-semibold tracking-wider font-poppins">
+            What types of brain tumors can be predicted?
           </p>
           <p className="text-white text-base md:text-lg font-medium text-opacity-60 tracking-wider font-poppins">
-            Each liquidity pool contains two assets. The pools keep track of
-            aggregate liquidity reserves and the pre-defined pricing strategies
-            set by liquidity providers. Reserves and prices are updated
-            automatically every time someone trades. There is no central order
-            book, no third-party custody, and no private order matching engine.
+            The platform is currently capable of predicting the grades of gliomas, the most common type of brain tumor. We are continuously working to expand its capabilities to include other types of brain tumors in the future.
+          </p>
+        </div>
+        <div className="w-full flex flex-col gap-5 border-white border-b border-opacity-20 py-16">
+          <p className="text-white text-lg md:text-xl font-semibold tracking-wider font-poppins">
+            How accurate are the predictions?
           </p>
           <p className="text-white text-base md:text-lg font-medium text-opacity-60 tracking-wider font-poppins">
-            Because reserves are automatically rebalanced after each trade, a
-            Nextswap pool can always be used to buy or sell a token — unlike
-            traditional exchanges, traders do not need to match with individual
-            counterparties to complete a trade. For a more in-depth description,
-            check out the Concepts from the documentation.
+            The platform has been rigorously tested and validated on a large dataset of brain tumor images. It achieves a high level of accuracy, comparable to expert radiologists. However, it's important to note that the predictions are intended to assist medical professionals, not replace their judgment.
           </p>
         </div>
         <div className="w-full flex flex-col gap-5 py-16">
           <p className="text-white text-lg md:text-xl font-semibold tracking-wider font-poppins">
-            How do I use the Nextswap Protocol?
+            Who can use this platform?
           </p>
           <p className="text-white text-base md:text-lg font-medium text-opacity-60 tracking-wider font-poppins">
-            To create a new liquidity pool, provide liquidity, swap tokens, or
-            vote on governance proposals, head over to the Nextswap Interface
-            and connect a Web3 wallet. Remember, each transaction on Ethereum
-            costs Ether (ETH). For a more detailed walkthrough, check out our
-            Help Guides.
-          </p>
-          <p className="text-white text-base md:text-lg font-medium text-opacity-60 tracking-wider font-poppins">
-            If you’re a developer interested in building on top of the Nextswap
-            Protocol, please refer to our extensive docs.
+            This platform is intended for use by qualified medical professionals, including radiologists, oncologists, and neurosurgeons. It can be a valuable tool in their clinical practice for diagnosing and treating brain tumors.
           </p>
         </div>
       </div>

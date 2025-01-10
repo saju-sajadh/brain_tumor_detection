@@ -1,41 +1,6 @@
-import backgroundImage from "../public/pattern.png";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { ArrowRightOutlined } from "@ant-design/icons";
-
-export default function Tag() {
-  const router = useRouter();
-  return (
-    <>
-      <div className="container mx-auto px-3 lg:px-16 mt-24">
-        <div
-          className={`z-0 px-2 lg:px-10 py-2 mx-auto lg:py-3 text-white font-marryweather tag rounded-xl`}
-        >
-          <div
-            className="z-20"
-            style={{ backgroundImage: `url(${backgroundImage})` }}
-          >
-            <div className="z-20 grid lg:grid-cols-3 justify-center md:justify-start gap-4">
-              <p className="lg:col-span-2 text-white text-2xl md:text-4xl font-semibold tracking-wider">
-                Powered by the Nextswap Protocol
-              </p>
-              <button
-                className=" lg:ml-auto w-1/2 px-2 py-1 bg-transparent rounded-xl text-white font-semibold border hover:border-pink-100 border-white"
-                onClick={() => router.push("/transaction")}
-              >
-                Live Transactions
-              </button>
-            </div>
-            <p className="z-20 pt-6 lg:pt-8 text-white text-md lg:text-lg md:text-xl lg:tracking-wider md:tracking-wider">
-              The leading decentralized crypto trading protocol, governed by a
-              global community.
-            </p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
 
 export function LaunchTag() {
   const Tags = (value, key) => {
@@ -50,34 +15,38 @@ export function LaunchTag() {
   return (
     <>
       <div className="hidden md:grid w-full mx-auto xl:grid-cols-4 z-30 px-48 pt-14">
-        {Tags("$489B+", "Trade Volume")}
-        {Tags("71M+", "All Time Trades")}
-        {Tags("300+", "Integrations")}
-        {Tags("4,400+", "Community Delegates")}
+        {/* Replace with relevant metrics */}
+        {Tags("98%", "Accuracy")} 
+        {Tags("10,000+", "Scans Analyzed")}
+        {Tags("5+", "Supported Modalities")} 
+        {Tags("10+", "Leading Hospitals")} 
       </div>
       <div className="grid lg:grid-cols-2 gap-10 md:gap-6 px-2 md:px-20 pt-16 md:pt-36">
         <div className="grid gap-2 justify-start xl:w-3/5 text-wrap">
           <a
             className="flex text-white mb-4 font-poppins cursor-pointer z-30 hover:text-opacity-60 text-2xl font-medium"
-            href="/ecosystem"
+            href="/about" // Changed to /about
           >
-            NEXTSWAP ECOSYSTEM{" "}
+            About the Project{" "} 
             <ArrowRightOutlined className="ml-1 text-base pt-[2px]" />
           </a>
           <p className="text-white mb-3 font-semibold text-3xl font-poppins">
-            A growing network of DeFi Apps.
+            {/* Update with a compelling headline */}
+            Revolutionizing Brain Tumor Detection 
           </p>
           <p className="font-poppins text-[#888D9B] text-xl font-medium text-opacity-80">
-            Developers, traders, and liquidity providers participate together in
-            a financial marketplace that is open and accessible to all.
+            {/* Update with relevant description */}
+            Our AI-powered platform provides fast, accurate, and accessible 
+            brain tumor prediction to improve patient outcomes.
           </p>
         </div>
         <div className="md:flex lg:justify-end">
           <div className="border-white md:w-5/6 h-[290px] md:h-[264px] rounded-xl z-30 relative bg-center px-4 md:px-3">
+            {/* Replace with relevant image */}
             <Image
-              src={"/apps.png"}
+              src={"/x-ray.jpg"} 
               fill
-              alt="apps"
+              alt="Brain Scan" 
               style={{ overflow: "hidden", objectFit: "cover" }}
               className="absolute rounded-2xl"
             />
@@ -95,50 +64,55 @@ export function LaunchingTagTwo() {
       <div className="md:col-span-2 rounded-xl z-30 bg-center px-2 border-white h-[353px] md:h-[420px]">
         <a
           className="flex text-white font-poppins cursor-pointer z-30 hover:text-opacity-60 text-2xl font-medium pb-6"
-          href="/developers"
+          href="/technology" // Changed to /technology
         >
-          DEVELOPERS <ArrowRightOutlined className="ml-1 text-base pt-[2px]" />
+          Technology <ArrowRightOutlined className="ml-1 text-base pt-[2px]" />
         </a>
         <div className="w-full h-full relative">
+          {/* Replace with relevant image */}
           <Image
-            src={"/developer.png"}
-            alt="dev"
+            src={"/apps.png"} 
+            alt="AI Visualization"
             fill
             style={{ overflow: "hidden", objectFit: "cover" }}
             className="absolute rounded-2xl"
           />
           <div className="absolute md:bottom-4 md:left-8 px-3 md:px-0 grid gap-4 md:w-3/4 justify-start">
             <p className="text-white text-3xl font-poppins font-medium">
-              Superpowers for DeFi developers.
+              {/* Update with relevant headline */}
+              Advanced AI for Accurate Predictions
             </p>
             <p className="font-poppins text-[#888D9B] text-xl font-medium text-opacity-90 md:text-opacity-80">
-              Build Defi apps and tools on the largest crypto project on
-              Ethereum. Get started with quick start guides, protocol
-              documentation, a Javascript SDK, and fully open source code.
+              {/* Update with relevant description */}
+              Our platform utilizes cutting-edge machine learning algorithms and 
+              deep learning models to analyze medical images and provide 
+              reliable predictions.
             </p>
             <button
-              onClick={() => router.push("/developers")}
+              onClick={() => router.push("/technology")} 
               className="bg-[#FFFFFF1A] hover:bg-opacity-60 hover:text-opacity-60 font-medium px-1 py-2 rounded-xl text-white font-poppins xl:w-1/4"
             >
-              Documentation ↗
+              Learn More ↗ 
             </button>
           </div>
         </div>
       </div>
       <div className="px-3 md:px-4 mt-14 h-full grid justify-start items-start py-2 bg-[#FFFFFF05] border-[1px] border-white border-opacity-20 rounded-2xl">
+        {/* Replace with relevant image */}
         <Image
-          src={"/unigrants.png"}
+          src={"/research_icon.png"} 
           width={150}
           height={150}
-          alt="unigrants"
+          alt="Research Icon" 
         />
         <p className="text-white text-xl font-medium font-poppins">
-          Apply for funding from the Nextswap Grants Program
+          {/* Update with relevant text */}
+          Explore Our Research and Publications
         </p>
         <p className="font-poppins text-[#888D9B] text-xl font-medium text-opacity-90 md:text-opacity-80">
-          Get paid to build the future of finance. Nextswap Governance offers
-          grant funding for people building apps, tools, and activities on the
-          Nextswap Protocol.
+          {/* Update with relevant description */}
+          Delve into the scientific foundation of our technology and 
+          discover the latest findings in brain tumor prediction.
         </p>
       </div>
     </div>
@@ -157,32 +131,36 @@ export function LaunchingTagThree() {
       <div className="rounded-xl z-30 bg-center px-2 border-white h-[353px] md:h-[420px]">
         <a
           className="flex text-white font-poppins cursor-pointer z-30 hover:text-opacity-60 text-2xl font-medium pb-6"
-          href="/governance"
+          href="/team" // Changed to /team
         >
-          PROTOCOL GOVERNANCE{" "}
+          Meet the Team{" "} 
           <ArrowRightOutlined className="ml-1 text-base pt-[2px]" />
         </a>
         <div className="w-full h-full relative">
+          {/* Replace with relevant image */}
           <Image
-            src={"/defi.avif"}
-            alt="dev"
+            src={"/team_photo.png"} 
+            alt="Team Photo" 
             fill
             style={{ overflow: "hidden", objectFit: "cover" }}
-            className="absolute rounded-2xl brightness-50 grayscale"
+            className="absolute rounded-2xl brightness-50 grayscale" 
           />
           <div className="absolute bottom-10 md:bottom-4 md:left-8 px-3 md:px-0 grid gap-4 md:w-3/4 justify-start">
             <p className="text-white text-3xl font-poppins font-medium">
-              Governed by the community.
+              {/* Update with relevant headline */}
+              The Experts Behind the Technology
             </p>
             <p className="font-poppins text-[#888D9B] text-xl font-medium text-opacity-90">
-              The Nextswap Protocol is managed by a global community of NEXT
-              token holders and delegates.
+              {/* Update with relevant description */}
+              Learn more about the dedicated team of researchers, 
+              developers, and medical professionals who made this 
+              project possible.
             </p>
             <button
-              onClick={() => router.push("/governance")}
+              onClick={() => router.push("/team")} 
               className="bg-[#FFFFFF1A] hover:bg-opacity-60 hover:text-opacity-60 font-medium px-1 py-2 rounded-xl text-white font-poppins "
             >
-              Read more ↗
+              Learn More ↗
             </button>
           </div>
         </div>
@@ -190,40 +168,44 @@ export function LaunchingTagThree() {
       <div className="mt-14 h-full grid gap-3 py-2">
         <div className={cardFunctions()}>
           <a
-            href="/governance"
+            href="/faq" 
             className="text-white text-xl font-medium font-poppins hover:text-opacity-60"
           >
-            Governance Forum ↗
+            Frequently Asked Questions ↗ 
           </a>
           <p className="font-poppins text-[#888D9B] text-sm md:text-lg font-semibold text-opacity-90 md:text-opacity-80">
-            Participate by proposing upgrades and discussing the future of the
-            protocol with the Nextswap community.
+            {/* Update with relevant description */}
+            Find answers to common questions about brain tumor prediction, 
+            our technology, and how to use our platform.
           </p>
         </div>
         <div className={cardFunctions()}>
           <a
-            href="/governance"
+            href="/contact" 
             className="text-white text-xl font-medium font-poppins hover:text-opacity-60"
           >
-            Sybil ↗
+            Contact Us ↗ 
           </a>
           <p className="font-poppins text-[#888D9B] text-sm md:text-lg font-semibold text-opacity-90 md:text-opacity-80">
-            Vote on offchain proposals with the Snapshot interface. Votes are
-            weighted by the number of NEXT delegates.
+            {/* Update with relevant description */}
+            Get in touch with our team for inquiries, support, or to learn 
+            more about collaboration opportunities.
           </p>
         </div>
-        <div className={cardFunctions()}>
+        {/* You can remove this third card if not needed */}
+        <div className={cardFunctions()}> 
           <a
-            href="/governance"
+            href="/research" 
             className="text-white text-xl font-medium font-poppins hover:text-opacity-60"
           >
-            Governance Portal ↗
+            Research Papers ↗ 
           </a>
           <p className="font-poppins text-[#888D9B] text-sm md:text-lg font-semibold text-opacity-90 md:text-opacity-80">
-            Vote on offchain proposals with the Snapshot interface. Votes are
-            weighted by the number of NEXT delegates.
+            {/* Update with relevant description */}
+            Access our published research papers and scientific articles 
+            related to brain tumor prediction.
           </p>
-        </div>
+        </div> 
       </div>
     </div>
   );
